@@ -27,8 +27,8 @@ of the `index.json` file.
 If the files do not already exist, the tabs will still open for them, but they
 will not be created when they are updated in the editor window.
 
-The path for these filenames, and for all editor file commands is relative to the
-`uieditorpath`.
+You can include a path with these filenames. Paths should be given
+relative to the `uieditorpath`.
 
 The syntax for the editor is automatically inferred from the file extension.
 This can be enforced by including a "uisettings"
@@ -121,3 +121,12 @@ This can then be opened:
 
 The Markdown is:
 <pre>`newFile.js`{{open}}</pre>
+
+
+Attempt to open a file outside of the `uieditorpath`:
+
+`../badFile.js`
+
+Attempt to open a file you shouldn't have access to!
+
+../../etc/fstab
